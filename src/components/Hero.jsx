@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center pt-16 bg-gradient-to-b from-white to-gray-50">
+    <section id="home" className="min-h-screen flex items-center pt-16 bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -16,14 +16,14 @@ const Hero = () => {
             <div className="space-y-4">
               <h1 className="text-5xl md:text-7xl font-bold">
                 Hi, I'm{' '}
-                <span className="text-primary bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-600">
+                <span className="text-primary bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-600 dark:from-blue-400 dark:to-blue-300">
                   Hasith Dulanjana
                 </span>
               </h1>
-              <h2 className="text-xl md:text-2xl text-gray-600 font-medium">
+              <h2 className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 font-medium">
                 Undergraduate | B.I.C.T.
               </h2>
-              <p className="text-gray-600 text-lg max-w-lg">
+              <p className="text-gray-600 dark:text-gray-300 text-lg max-w-lg">
                 Passionate about web development and creating innovative solutions.
               </p>
             </div>
@@ -36,7 +36,7 @@ const Hero = () => {
             >
               <a
                 href="https://drive.google.com/file/d/1-aEhvmP5kbIcy6-d0g-GLSSFFlf6S-qQ/view?usp=sharing"
-                className="px-8 py-4 bg-gradient-to-r from-primary to-blue-600 text-white rounded-lg 
+                className="px-8 py-4 bg-gradient-to-r from-primary to-blue-600 dark:from-blue-500 dark:to-blue-400 text-white rounded-lg 
                          hover:shadow-lg hover:scale-105 transform transition-all duration-300"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -47,8 +47,8 @@ const Hero = () => {
                 to="contact"
                 smooth={true}
                 duration={500}
-                className="px-8 py-4 border-2 border-primary text-primary rounded-lg
-                         hover:bg-primary hover:text-white hover:shadow-lg 
+                className="px-8 py-4 border-2 border-primary dark:border-blue-400 text-primary dark:text-blue-400 rounded-lg
+                         hover:bg-primary dark:hover:bg-blue-400 hover:text-white dark:hover:text-white hover:shadow-lg 
                          transform transition-all duration-300 cursor-pointer"
               >
                 Contact Me
@@ -64,14 +64,14 @@ const Hero = () => {
           >
             <div className="relative w-80 h-80 mx-auto">
               {/* Background circles for visual effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-blue-500/20 rounded-full 
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-blue-500/20 dark:from-blue-400/20 dark:to-blue-300/20 rounded-full 
                             animate-pulse duration-3000"></div>
-              <div className="absolute inset-4 bg-gradient-to-r from-primary/10 to-blue-500/10 rounded-full 
+              <div className="absolute inset-4 bg-gradient-to-r from-primary/10 to-blue-500/10 dark:from-blue-400/10 dark:to-blue-300/10 rounded-full 
                             animate-pulse duration-2000 delay-100"></div>
               
               {/* Image container */}
               <div className="absolute inset-0 p-2">
-                <div className="w-full h-full rounded-full overflow-hidden border-4 border-white shadow-xl
+                <div className="w-full h-full rounded-full overflow-hidden border-4 border-white dark:border-gray-700 shadow-xl
                               transform hover:scale-105 transition-transform duration-300">
                   <img
                     src={process.env.PUBLIC_URL + '/resources/hasith.jpeg'}
@@ -84,12 +84,12 @@ const Hero = () => {
 
             {/* Decorative elements */}
             <motion.div
-              className="absolute -top-4 -right-4 w-20 h-20 bg-blue-100 rounded-full z-[-1]"
+              className="absolute -top-4 -right-4 w-20 h-20 bg-blue-100 dark:bg-blue-900/50 rounded-full z-[-1]"
               animate={{ scale: [1, 1.2, 1] }}
               transition={{ duration: 2, repeat: Infinity }}
             />
             <motion.div
-              className="absolute -bottom-4 -left-4 w-12 h-12 bg-primary/20 rounded-full z-[-1]"
+              className="absolute -bottom-4 -left-4 w-12 h-12 bg-primary/20 dark:bg-blue-400/20 rounded-full z-[-1]"
               animate={{ scale: [1, 1.3, 1] }}
               transition={{ duration: 2, delay: 0.3, repeat: Infinity }}
             />
