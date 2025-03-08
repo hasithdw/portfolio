@@ -1,6 +1,6 @@
 {
-  "short_name": "Portfolio",
-  "name": "Sreenjay Valtanapura Portfolio",
+  "short_name": "HDW Portfolio",
+  "name": "Hasith Dulanjana - Portfolio",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#2563eb",
   "background_color": "#ffffff"
 } 
